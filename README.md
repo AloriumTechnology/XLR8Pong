@@ -14,6 +14,7 @@ https://github.com/AloriumTechnology/XLR8BuildTemplate
 A few components will need to be assembled and attached to the XLR8 board.
 
 ##Video cable:
+<pre>
                              1K Ohm 
 Video Sync:  JTag pin9  ----vvvvvvv--------+
                                            |
@@ -21,25 +22,25 @@ Video out:   JTag pin7  ----vvvvvvv--------+------------ RCA connector (center p
                              470 Ohm                    
                                                        
 GND:         JTag pin2  -------------------------------- RCA GND (outside)
-
+</pre>
 
 ##Paddle Controller:  
-  2 controllers are needed using the following parts.
+  2 controllers are needed using the following parts. 
   two 10k ohm or 1k ohm potentiometers and two momentary switches (normally open)
+<pre>
+XLR8 5v:  ------+
+                |
+                < 
+  10K ohm  pot. <------------  (Player 0: XLR8 pin A0,   Player 1: XLR8 pin A1)
+                <
+                <
+                |
+XLR8 GND:  -----+
+                |
+                |
+         switch  \
+                |
+                +------------  (Player 0: XLR8 pin D7,  Player 1: XLR8 pin D6)
 
-5v:  ------+
-           |
-           < 
-      pot. <------------  (Player 0: XLR8 pin A0,   Player 1: XLR8 pin A1)
-           <
-           <
-           |
-GND:  -----+
-           |
-           |
-    switch  \
-           |
-           +------------  (Player 0: XLR8 pin D7,  Player 1: XLR8 pin D6)
-           
-
+</pre>
 
