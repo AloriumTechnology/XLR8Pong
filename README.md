@@ -25,7 +25,7 @@ GND:         JTag pin2  -------------------------------- RCA GND (outside)
 </pre>
 
 ##Paddle Controller:  
-  2 controllers are needed using the following parts. 
+  2 controllers are needed using the following parts.  
   two 10k ohm or 1k ohm potentiometers and two momentary switches (normally open)
 <pre>
 XLR8 5v:  ------+
