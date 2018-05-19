@@ -1,4 +1,4 @@
-#XLR8Pong
+# XLR8Pong
 ## A FPGA implementation of the Pong Game using Alorium Technology's OpenXLR8 design methodology
 
 The XLR8 block is used to create the NTSC A/V signals needed to connected to a television or monitor that has NTSC (Game) A/V inputs for displaying the Pong game. 
@@ -13,7 +13,7 @@ https://github.com/AloriumTechnology/XLR8BuildTemplate
 
 A few components will need to be assembled and attached to the XLR8 board.
 
-##Video cable:
+## Video cable:
 <pre>
                              1K Ohm 
 Video Sync:  JTag pin9  ----vvvvvvv--------+
@@ -24,7 +24,7 @@ Video out:   JTag pin7  ----vvvvvvv--------+------------ RCA connector (center p
 GND:         JTag pin2  -------------------------------- RCA GND (outside)
 </pre>
 
-##Paddle Controller:  
+## Paddle Controller:  
   2 controllers are needed using the following parts.  
   two 10k ohm or 1k ohm potentiometers and two momentary switches (normally open)
 <pre>
