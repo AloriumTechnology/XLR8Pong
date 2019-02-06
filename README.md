@@ -1,3 +1,15 @@
+Menlo Fork:
+
+Bring out the latent audio functionality.
+
+Better document and comment the Verilog.
+
+Include Eagle designs for an Arduino shield with Grove connectors for the paddles and RCA jacks for audio and video.
+
+Include volume control and any required RC network for audio.
+
+Include an Eagle design for a paddle/switch PCB.
+
 # XLR8Pong
 ## A FPGA implementation of the Pong Game using Alorium Technology's OpenXLR8 design methodology
 
