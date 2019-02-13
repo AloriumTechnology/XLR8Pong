@@ -11,13 +11,13 @@ set_global_assignment -name QXP_FILE ../../../XLR8Core/extras/quartus/xlr8_atmeg
 
 # XB rtl
 #set_global_assignment -name VERILOG_FILE ../../../XLR8Servo/extras/rtl/xlr8_servo.v
-set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extra/rtl/my_rand.v
-set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extra/rtl/xb_adr_pack.vh
-set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extra/rtl/audio_driver.v
-set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extra/rtl/vid_score.v
-set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extra/rtl/vid_driver.v
-set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extra/rtl/vid_timer16.v
-set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extra/rtl/pong16.v
+set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extras/rtl/my_rand.v
+set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extras/rtl/xb_adr_pack.vh
+set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extras/rtl/audio_driver.v
+set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extras/rtl/vid_score.v
+set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extras/rtl/vid_driver.v
+set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extras/rtl/vid_timer16.v
+set_global_assignment -name VERILOG_FILE ../../../XLR8Pong/extras/rtl/pong16.v
 
 # Top level rtl, etc.
 set_global_assignment -name SYSTEMVERILOG_FILE ../rtl/xlr8_top.v
@@ -47,4 +47,6 @@ set_global_assignment -name EDA_TEST_BENCH_FILE ../modelsim/xlr8_tb.sv -section_
 
 
 
+
+set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
