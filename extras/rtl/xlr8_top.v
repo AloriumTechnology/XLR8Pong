@@ -57,8 +57,10 @@ module xlr8_top
   localparam CLOCK_SELECT = DESIGN_CONFIG[2:1]; // 2 bits. 0=16MHZ, 1=32MHz, 2=64MHz, 3=reserved
   localparam PLL_SELECT   = DESIGN_CONFIG[4];  // 1=50MHz PLL, 0=16MHz PLL
   localparam NUM_XBS      = 1;        // 1=All the built-in XBs (ADC, internal OSC, etc) but nothing else
-  localparam APP_XB0_ENABLE = 32'h0;  // ID indicates which XBs beyond the built-in ones are included, [7:0] are reserved
-                                      //   typically use bit [0] for floating point, [1] for servo, [2] for neopixel
+
+  // ID indicates which XBs beyond the built-in ones are included, [7:0] are reserved
+  //   typically use bit [0] for floating point, [1] for servo, [2] for neopixel
+  localparam APP_XB0_ENABLE = 32'h0;
     
 `include "avr_adr_pack.vh"
 //`include "xb_adr_pack.vh"
@@ -301,8 +303,15 @@ module xlr8_top
   // Temporarily just send some debug signals out
   assign JT9    = vid_sync;
   assign JT7    = vid;
+
   assign JT6    = locked_adcref;
-  assign JT5    = vid;
+
+  // Menlo: Assign this to audio.
+  wire audio;
+
+  assign JT5    = audio;
+  //assign JT5    = vid;
+
   assign JT3    = rst_flash_n;
   assign JT1    = clk_cpu;
   // FIXME: these aren't hooked up yet
@@ -589,6 +598,7 @@ xlr8_atmega328clone
                    .rst_n      (core_rstn),
                    .vid_sync_o (vid_sync),
                    .vid_o      (vid),
+                   .audio_o    (audio), // Menlo: Add audio
 	           .ramadr     (core_ramadr_lo8[7:0]),
 	           .ramre      (core_ramre),
 	           .ramwe      (core_ramwe),

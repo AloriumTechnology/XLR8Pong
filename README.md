@@ -1,3 +1,26 @@
+Menlopark Innovation Fork:
+
+Bring out the latent audio functionality.
+
+Build the project with the provided updates.
+
+Connect a 10K potentiometer as follows:
+
+Audio:
+
+JTag pin 5 -----+
+                |
+                < 
+  10K ohm  pot. <------------  Audio Jack Center
+                <
+                <
+                |
+                +------------  Audio Jack Shield
+                |
+               GND
+
+The underlying Pong sounds from the game will be heard.
+
 # XLR8Pong
 ## A FPGA implementation of the Pong Game using Alorium Technology's OpenXLR8 design methodology
 
